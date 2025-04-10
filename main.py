@@ -1,14 +1,5 @@
-# Agentic Research Assistant with LangChain Agents
+# Agentic Research Assistant with LangChain
 
-# Step 1: Setup and Installation
-# -------------------------------
-# pip install openai langchain arxiv python-dotenv
-
-# Step 2: Create .env file for storing API keys
-# -------------------------------
-# OPENAI_API_KEY="your-openai-key"
-
-# Step 3: main.py
 
 import os
 import arxiv
@@ -51,9 +42,9 @@ agents = initialize_agent(
 # Step 6: Agent Execution
 # -------------------------------
 def run_agentic_pipeline(query):
-    print("\n🚀 Running LangChain Agent...")
+    print("\n Running LangChain Agent...")
     response = agents.run(query)
-    print("\n📄 Final Output:\n")
+    print("\n Final Output:\n")
     print(response)
 
 # Step 7: Entry point
